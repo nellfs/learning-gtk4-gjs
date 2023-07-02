@@ -1,13 +1,13 @@
-project('filebrowser',
-  version: '0.0.1'
-  license: 'GPL2+'
-  meson_version: '>= 0.59.0',
+project(
+	'filebrowser',
+	version: '0.0.1',
+	license: ['GPL-3.0-or-later'],
+	meson_version: '>= 0.59.0'
 )
 
-app_id = 'org.example.filebrowser'
+APP_ID = 'org.example.filebrowser'
 
 gnome = import('gnome')
 
 subdir('data')
 subdir('src')
-
